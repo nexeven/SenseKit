@@ -65,18 +65,84 @@ Run `carthage update` to build the framework and drag the built `Sensekit.framew
 
 ## Install SenseKit manually
 
-1. Download the latest SenseKit framework from the [releases section](https://github.com/nexeven/SenseKit/releases)
-2. Drag and drop the framework and make sure it's included in `Embedded Binaries`
-3. Import the framework
+### Download SenseKit
 
-Objective-C:
+First we need to download SenseKit. Download the latest version from the link below.
+
+[https://github.com/nexeven/SenseKit/releases](https://github.com/nexeven/SenseKit/releases)
+
+### Unzip SenseKit
+
+After you download SenseKit extract it somewhere. It will look like something this:
+
+![SenseKit](https://s17.postimg.org/djhr9gzfj/Sense_Kit1png.png)
+
+### Move `SenseKit.framework` to your project's directory
+
+Move the `SenseKit.framework` file equivalent to your platform (iOS, Mac, tvOS) to your application's directory. In our example we moved it to the `Frameworks` directory next to our Xcode project, but you can move it anywhere you want.
+
+![SenseKit](https://s11.postimg.org/q6hw4l4pf/Sense_Kit2.png)
+
+### Drag and Drop `SenseKit.framework` into your Xcode project
+
+Now you just need to drag and drop `SenseKit.framework` into the **Embedded Binaries** section in your target configuration.
+
+![SenseKit](https://s11.postimg.org/bawbap1gj/Sense_Kit3.gif)
+
+## Configuring the plugin
+
+Now just import the framework and configure the plugin using your instance of `AVPlayer` and your info.
+
+#### Objective-C
 
 ```objective-c
 @import SenseKit;
+
+...
+
+NECustomMetadata *assetMetadata = [NECustomMetadata alloc];
+assetMetadata.key = @"AMK1";
+assetMetadata.values = @[@"AMV1", @"AMV11"];
+
+NECustomMetadata *viewerMetadata = [NECustomMetadata alloc];
+viewerMetadata.key = @"CMK1";
+viewerMetadata.values = @[@"CMV1", @"CMV11"];
+
+NESenseAgent *agent = [[NESenseAgent alloc] initWithAVPlayer:player // your AVPlayer instance
+                                                     assetId:assetId
+                                                  serverHost:@"https://sense.nexeven.io"
+                                                      nxeCID:@"BBQCID"
+                                                   assetType:assetType
+                                                   assetName:assetName
+                                                    viewerId:@"jorgenS"
+                                               assetMetadata:@[assetMetadata]
+                                              viewerMetadata:@[viewerMetadata]];
 ```
 
-Swift:
+#### Swift
 
 ```swift
 import SenseKit
+
+...
+
+let assetMetadata = CustomMetadata()
+assetMetadata.key = "AMK1"
+assetMetadata.values = ["AMV1", "AMV11"]
+
+let viewerMetadata = CustomMetadata()
+viewerMetadata.key = "CMK1"
+viewerMetadata.values = ["CMV1", "CMV11"]
+
+let agent = SenseAgent(
+    player: player, // your AVPlayer instance
+    assetId: assetId,
+    nxeCID: "BBQCID",
+    assetType: assetType,
+    assetName: assetName,
+    viewerId: "jorgenS",
+    assetMetadata: [assetMetadata],
+    viewerMetadata: [viewerMetadata]
+)
 ```
+
