@@ -98,8 +98,6 @@ Now just import the framework and configure the plugin using your instance of `A
 ```objective-c
 @import SenseKit;
 
-...
-
 NECustomMetadata *assetMetadata = [[NECustomMetadata alloc] init];
 assetMetadata.key = @"AMK1";
 assetMetadata.values = @[@"AMV1", @"AMV11"];
@@ -126,8 +124,6 @@ NESenseAgent *agent = [[NESenseAgent alloc] initWithAVPlayer:player // your AVPl
 
 ```swift
 import SenseKit
-
-...
 
 let assetMetadata = CustomMetadata()
 assetMetadata.key = "AMK1"
