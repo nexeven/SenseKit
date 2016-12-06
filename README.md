@@ -67,7 +67,7 @@ Run `carthage update` to build the framework and drag the built `Sensekit.framew
 
 ### Download SenseKit
 
-First we need to download SenseKit. Download the latest version from the link below.
+First we need to download **SenseKit.framework.zip**. Download the latest version from the link below.
 
 [https://github.com/nexeven/SenseKit/releases](https://github.com/nexeven/SenseKit/releases)
 
