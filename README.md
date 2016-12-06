@@ -117,6 +117,9 @@ NESenseAgent *agent = [[NESenseAgent alloc] initWithAVPlayer:player // your AVPl
                                                     viewerId:@"jorgenS"
                                                assetMetadata:@[assetMetadata]
                                               viewerMetadata:@[viewerMetadata]];
+
+// to end the session manually call `endSession`
+[agent endSession];
 ```
 
 #### Swift
@@ -144,5 +147,7 @@ let agent = SenseAgent(
     assetMetadata: [assetMetadata],
     viewerMetadata: [viewerMetadata]
 )
-```
 
+// to end the session manually call `endSession`
+agent.endSession()
+```
