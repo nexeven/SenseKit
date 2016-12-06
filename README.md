@@ -27,7 +27,7 @@ CocoaPods is used to install and manage dependencies in existing Xcode projects.
 platform :ios, '8.0'
 
 target 'YourApplicationTargetNameHere' do
-    pod 'SenseKit', '~> 1.0.0'
+    pod 'SenseKit', '~> 1.0.1'
 end
 ```
 
@@ -61,7 +61,7 @@ brew install carthage
 To integrate Sensekit into your Xcode project using Carthage, specify it in your `Cartfile`:
 
 ```ogdl
-github "Nexeven/Sensekit" ~> 1.0.0
+github "Nexeven/Sensekit" ~> 1.0.1
 ```
 
 Run `carthage update` to build the framework and drag the built `Sensekit.framework` into your Xcode project.
