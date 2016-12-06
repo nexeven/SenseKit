@@ -51,8 +51,8 @@ pod install
 You can install Carthage with [Homebrew](http://brew.sh/) using the following command:
 
 ```bash
-$ brew update
-$ brew install carthage
+brew update
+brew install carthage
 ```
 
 To integrate Sensekit into your Xcode project using Carthage, specify it in your `Cartfile`:
