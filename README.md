@@ -65,7 +65,7 @@ Run `carthage update` to build the framework and drag the built `Sensekit.framew
 
 ## Install SenseKit manually
 
-1. Download the SenseKit framework for your platform from [URL MISSING]()
+1. Download the latest SenseKit framework from the [releases section](https://github.com/nexeven/SenseKit/releases)
 2. Drag and drop the framework and make sure it's included in `Embedded Binaries`
 3. Import the framework
 
