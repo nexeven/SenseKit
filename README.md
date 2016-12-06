@@ -1,6 +1,6 @@
 # SenseKit
 
-Nexeven Sense™ is an online video analytics platform that provides real-time quality metrics, audience analytics, and marketing analytics..
+Nexeven Sense™ is an online video analytics platform that provides real-time quality metrics, audience analytics, and marketing analytics.
 
 Much more information can be found at http://www.nexeven.com.
 
