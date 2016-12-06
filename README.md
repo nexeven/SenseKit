@@ -11,7 +11,7 @@ the terminal. Detailed information is available in the [Getting Started
 guide](https://guides.cocoapods.org/using/getting-started.html#getting-started).
 
 ```
-$ sudo gem install cocoapods
+sudo gem install cocoapods
 ```
 
 ### Add SenseKit to your iOS app
