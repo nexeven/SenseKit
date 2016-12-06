@@ -91,7 +91,7 @@ Now you just need to drag and drop `SenseKit.framework` into the **Embedded Bina
 
 ## Configuring the plugin
 
-Now just import the framework and configure the plugin using your instance of `AVPlayer` and your info.
+Now just import the framework and configure the plugin using your instance of `AVPlayer` and your customer info.
 
 #### Objective-C
 
