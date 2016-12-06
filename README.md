@@ -24,8 +24,11 @@ CocoaPods is used to install and manage dependencies in existing Xcode projects.
 3. Open `Podfile`, and add your dependencies. A simple Podspec is shown here:
 
 ```ruby
-platform :ios, '8.1'
-pod 'SenseKit'
+platform :ios, '8.0'
+
+target 'YourApplicationTargetNameHere' do
+    pod 'SenseKit', '~> 1.0.0'
+end
 ```
 
 4. Save the file.
