@@ -6,7 +6,7 @@ Much more information can be found at http://www.nexeven.com.
 
 ## Install SenseKit using CocoaPods
 
-You can install the CocoaPods tool on OS X by running the following command from
+You can install the CocoaPods tool on macOS by running the following command from
 the terminal. Detailed information is available in the [Getting Started
 guide](https://guides.cocoapods.org/using/getting-started.html#getting-started).
 
