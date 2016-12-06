@@ -100,11 +100,11 @@ Now just import the framework and configure the plugin using your instance of `A
 
 ...
 
-NECustomMetadata *assetMetadata = [NECustomMetadata alloc];
+NECustomMetadata *assetMetadata = [[NECustomMetadata alloc] init];
 assetMetadata.key = @"AMK1";
 assetMetadata.values = @[@"AMV1", @"AMV11"];
 
-NECustomMetadata *viewerMetadata = [NECustomMetadata alloc];
+NECustomMetadata *viewerMetadata = [[NECustomMetadata alloc] init];
 viewerMetadata.key = @"CMK1";
 viewerMetadata.values = @[@"CMV1", @"CMV11"];
 
